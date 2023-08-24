@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Event</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Countdown Event</h1>
+      <div class="countdownDetail">
+        <div id="countdown"></div>
+        <div id="eventDetails"></div>
+      </div>
+      <div class="input-component">
+        <input type="text" id="eventTitle" placeholder="Masukkan Event" />
+        <input type="datetime-local" id="targetDate" />
+      </div>
+      <div class="cta">
+        <button onclick="setCountdown()">Set</button>
+        <button onclick="deleteCountdown()">Hapus</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
